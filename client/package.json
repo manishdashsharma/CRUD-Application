@@ -1,6 +1,6 @@
 {
   "name": "client",
-  "homepage": "https://manishdashsharma.github.io/CURD",
+  "homepage": "https://manishdashsharma.github.io/CRUD",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
