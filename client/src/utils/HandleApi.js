@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 
-const BaseURL = "http://localhost:5000";
+// const BaseURL = "http://localhost:5000";
+const BaseURL = "https://curd-0lot.onrender.com";
 
 export const fetchUsers = async () => {
     try{
