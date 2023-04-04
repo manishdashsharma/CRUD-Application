@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/CURD/static/css/main.b5c57d77.css",
-    "main.js": "/CURD/static/js/main.e9c5f259.js",
+    "main.js": "/CURD/static/js/main.aa8030fa.js",
     "static/js/787.c4e7f8f9.chunk.js": "/CURD/static/js/787.c4e7f8f9.chunk.js",
     "index.html": "/CURD/index.html",
     "main.b5c57d77.css.map": "/CURD/static/css/main.b5c57d77.css.map",
-    "main.e9c5f259.js.map": "/CURD/static/js/main.e9c5f259.js.map",
+    "main.aa8030fa.js.map": "/CURD/static/js/main.aa8030fa.js.map",
     "787.c4e7f8f9.chunk.js.map": "/CURD/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b5c57d77.css",
-    "static/js/main.e9c5f259.js"
+    "static/js/main.aa8030fa.js"
   ]
 }
