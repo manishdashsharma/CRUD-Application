@@ -45,31 +45,36 @@ const UserDetails = ({ users, getUsersData }) => {
                 <th className="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">
                   Email
                 </th>
-                <th className="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">
-                  Edit
-                </th>
-                <th className="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">
-                  Delete
+                <th
+                  colSpan="2"
+                  className="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 text-center"
+                >
+                  Action
                 </th>
               </tr>
             </thead>
             <tbody>
-              {users.length === 0 ? (
-                <h2>No users data is available!</h2>
+              {users && users.length === 0 ? (
+                <tr>
+                  <td colSpan="4">
+                    <h2 className="text-center my-4 text-xl">
+                      No users data is available!
+                    </h2>
+                  </td>
+                </tr>
               ) : (
-                users.user.map(user => (
+                users &&
+                users.map(user => (
                   <tr key={user._id}>
                     <td className="px-4 py-3">{user.name}</td>
                     <td className="px-4 py-3">{user.email}</td>
-                    <td className="px-4 py-3">
+                    <td className="px-4 py-3 flex justify-around" colSpan="2">
                       <button
                         className="hover:text-green-500"
                         onClick={() => handleEditUser(user)}
                       >
                         Edit
                       </button>
-                    </td>
-                    <td className="px-4 py-3 text-lg text-gray-900">
                       <button
                         className="hover:text-red-500"
                         onClick={() => handleDeleteUser(user._id)}

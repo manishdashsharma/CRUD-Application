@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Toaster } from 'react-hot-toast';
 
-import Form from './Components/Form';
-import UserDetails from './Components/UserDetails';
+import Form from './component/Form';
+import UserDetails from './component/UserDetails';
 import { fetchUsers } from './utils/HandleApi';
 
 import './App.css';

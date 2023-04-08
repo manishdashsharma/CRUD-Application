@@ -3,7 +3,7 @@ import axios from 'axios';
 export const fetchUsers = async () => {
   try {
     const response = await axios.get(`/getUser`);
-    return response.data;
+    return response.data.user;
   } catch (err) {
     return err.response.data.message;
   }
