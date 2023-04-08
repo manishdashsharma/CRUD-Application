@@ -10,7 +10,7 @@ import reportWebVitals from './reportWebVitals';
 // Axios
 import axios from 'axios';
 
-axios.defaults.baseURL = process.env.REACT_APP_BACKEND_URL;
+axios.defaults.baseURL = process.env.REACT_APP_BACKEND_URL || "https://crud-nfji.onrender.com/";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
