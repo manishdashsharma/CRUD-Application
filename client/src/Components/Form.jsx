@@ -6,15 +6,14 @@ import UserDetails from './UserDetails';
 function Form() {
     const [name , setName ] = useState("");
     const [email , setEmail ] = useState("");
-
-
+    
     const handleSubmit = async (event) => {
         event.preventDefault();
         const data = await createUser(name , email);
         if (data.success) {
             toast.success(data.message); 
-            <UserDetails />
             fetchUsers();
+            <UserDetails />
         } else {
             console.log(data.message);
             toast.error(data.message);
@@ -22,6 +21,7 @@ function Form() {
         setName("");
         setEmail("");
     }
+    
 
     const handleChangeName = (event) => {
         setName(event.target.value)

@@ -2,7 +2,8 @@ import axios from 'axios';
 
 
 // const BaseURL = "http://localhost:5000";
-const BaseURL = "https://crud-nfji.onrender.com";
+const BaseURL = "https://crud-nfji.onrender.com/";
+
 
 export const fetchUsers = async () => {
     try{
