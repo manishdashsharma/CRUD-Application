@@ -27,14 +27,6 @@ const Form = ({ getUsersData }) => {
     setEmail('');
   };
 
-  /** const handleChangeName = event => {
-    setName(event.target.value);
-  };
-
-  const handleChangeEmail = event => {
-    setEmail(event.target.value);
-  }; **/
-
   const handleFormInputChange = (event, type) => {
     if (type === 'name') {
       setName(event.target.value);
